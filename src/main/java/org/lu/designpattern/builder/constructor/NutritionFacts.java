@@ -9,7 +9,7 @@ public class NutritionFacts {
 	private final int sodium;
 	private final int carbohydrate;
 
-	public static class Builder implements AbstractBuilder<NutritionFacts> {
+	protected static class Builder implements AbstractBuilder<NutritionFacts> {
 		// Required parameters
 		private final int servingSize;
 		private final int servings;
