@@ -25,6 +25,7 @@ public class Robot {
 		this.name = name;
 	}
 
+	@SuppressWarnings("unused")
 	public void move() {
 		System.out.println(this.name + ": Based on current position"
 				+ "the behaviour object decide the next move:");
