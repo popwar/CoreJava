@@ -16,8 +16,6 @@ import com.google.common.util.concurrent.ListeningExecutorService;
 import com.google.common.util.concurrent.MoreExecutors;
 
 public class JobPoolByGoogle {
-	private static BigDecimal sum = BigDecimal.ZERO.setScale(2);
-
 	public static void main(String[] args) {
 		ListeningExecutorService executorService = MoreExecutors
 				.listeningDecorator(Executors.newFixedThreadPool(3));
