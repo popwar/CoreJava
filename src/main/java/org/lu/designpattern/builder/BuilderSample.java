@@ -5,15 +5,12 @@ public class BuilderSample {
 		HouseBuilder iglooBuilder = new IglooHouseBuilder();
 		CivilEngineer engineer = new CivilEngineer(iglooBuilder);
 
-		engineer.constructHouse();
-
 		HousePlan house = engineer.getHouse();
 
 		System.out.println("Builder constructed: " + house.getName());
 
 		iglooBuilder = new SmallFlatBuilder();
 		engineer = new CivilEngineer(iglooBuilder);
-		engineer.constructHouse();
 
 		house = engineer.getHouse();
 
