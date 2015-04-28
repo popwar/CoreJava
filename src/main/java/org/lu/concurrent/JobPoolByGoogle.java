@@ -31,8 +31,8 @@ public class JobPoolByGoogle {
 	}
 
 	private static List<ListenableFuture<BigDecimal>> dispatchSalaryCalculateTask(
-			ListeningExecutorService executorService,
-			List<? extends SalaryCalculator> list) {
+			final ListeningExecutorService executorService,
+			final List<? extends SalaryCalculator> list) {
 
 		List<ListenableFuture<BigDecimal>> futureList = new ArrayList<>();
 		for (SalaryCalculator cal : list) {
@@ -75,8 +75,8 @@ public class JobPoolByGoogle {
 	}
 
 	private static void calculateTotalSalary(
-			List<ListenableFuture<BigDecimal>> futureList,
-			ListeningExecutorService executorService) {
+			final List<ListenableFuture<BigDecimal>> futureList,
+			final ListeningExecutorService executorService) {
 		ListenableFuture<List<BigDecimal>> taskBatch = Futures
 				.allAsList(futureList);
 
