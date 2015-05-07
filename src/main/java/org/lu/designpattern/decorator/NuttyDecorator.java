@@ -3,7 +3,7 @@ package org.lu.designpattern.decorator;
 public class NuttyDecorator extends IcecreamDecorator {
 
 	public NuttyDecorator(Icecream specialIcecream) {
-		super(specialIcecream);
+		this.specialIcecream = specialIcecream;
 	}
 
 	public String makeIcecream() {
