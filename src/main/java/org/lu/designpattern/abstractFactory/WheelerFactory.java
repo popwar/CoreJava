@@ -9,6 +9,7 @@ public class WheelerFactory extends AbstractFactory<Wheeler> {
 			returnWheeler = wheeler.getClass().newInstance();
 		} catch (InstantiationException | IllegalAccessException e) {
 			e.printStackTrace();
+			throw new RuntimeException("get instance failed");
 		}
 		return returnWheeler;
 	}
