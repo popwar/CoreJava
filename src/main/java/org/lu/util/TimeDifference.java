@@ -16,7 +16,8 @@ public class TimeDifference {
 	}
 
 	public static enum TimeZoneContent {
-		EUROPE("Europe/London"), AUSTRLIA("Australia/Melbourne");
+		CHINA("Asia/Shanghai"), EUROPE("Europe/London"), AUSTRLIA(
+				"Australia/Melbourne");
 
 		private String zone;
 
