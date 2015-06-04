@@ -14,10 +14,11 @@ public class Car {
 	}
 
 	private static class CarBuilder implements AbstractBuilder<Car> {
-		private final List<String> wheels = Arrays.asList(new String[4]);
+		private final List<String> wheels;
 		private final String panel;
 
 		private CarBuilder(String mypanel) {
+			wheels = Arrays.asList(new String[4]);
 			this.panel = mypanel;
 		}
 

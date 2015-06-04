@@ -129,7 +129,7 @@ public class JobPoolByGoogle {
 	private static class QaSalaryCalculator implements SalaryCalculator {
 		@Override
 		public BigDecimal calculate() {
-			return new BigDecimal(1 / 0);
+			throw new RuntimeException("QA salary calculation failed");
 		}
 	}
 }
