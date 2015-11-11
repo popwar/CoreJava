@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import com.google.common.collect.Lists;
+
 public class Test1 {
 
 	private interface Function<T> {
@@ -27,14 +29,7 @@ public class Test1 {
 	}
 
 	public static void main(String... args) {
-		List<Integer> list = Arrays.asList(1, 3, 5, 7, 9);
-
-//		Function<Integer> f = new Function<Integer>() {
-//			@Override
-//			public Integer apply(Integer arg1, Integer arg2) {
-//				return arg1.intValue() - arg2.intValue();
-//			}
-//		};
+		List<Integer> list = Lists.newArrayList(1, 3, 5, 7, 9); 
 		
 		System.out.println(Test1.reduce(list, (Integer arg1, Integer arg2) -> {
 			return arg1.intValue() - arg2.intValue();
