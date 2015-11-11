@@ -32,7 +32,6 @@ public class Test1 {
 //		Function<Integer> f = new Function<Integer>() {
 //			@Override
 //			public Integer apply(Integer arg1, Integer arg2) {
-//				// TODO Auto-generated method stub
 //				return arg1.intValue() - arg2.intValue();
 //			}
 //		};
