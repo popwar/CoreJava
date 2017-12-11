@@ -1,5 +1,6 @@
 package org.lu.b.fighters;
 
+//Test
 public abstract class AbstractMissle implements Missle {
 
 	protected int storageNumber = 0;
